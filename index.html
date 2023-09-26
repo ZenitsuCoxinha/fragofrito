@@ -1,45 +1,33 @@
-<!DOCTYPE html>
+<html>
+<head>  
+<link rel="stylesheet" type="text/css" href="style.css">
 
-<head>
-<title>Tarefa do Aluno</title>
-    <link rel="stylesheet" type="text/css" href="style_86.css" />
-    <script type="text/javascript" src="main_86.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Molengo' rel='stylesheet' type='text/css'>
+    <script type="text/javascript">
+</script>
+
 </head>
+<body class="bodyBackgorund">
 
-<body>
-<center>
-<div id="content">
-    <h1>Insira os Nomes dos Alunos e suas Notas</h1>
-    <div class="formLayout">
-        <label class = box1>Nome do Aluno:</label>
-        <input type="text" id="studentName"/><br/><br>
+<div align="center">
+<h1>Paint</h1>
 
-        <label class = box2>Nota:</label>
-        <input type="text" id="score"/><br/><br>
+    <canvas id="myCanvas" width="800" height="400"></canvas>
+        <br><br >
+
+<!--Atividade Adicional -->
+        <span>Raio: </span>  
+        <input type="text" id="radius" value=20>
+
+        <span>Cor: </span>  
+        <input type="text" id="color" value="Red">
         
-        <!--Adicione o código para o botão Organizar aqui-->
-        <!--Nomeie o botão como "Adicionar Nota do Aluno" no campo "value"-->
-        <label>&nbsp;</label>
-        <input type="button" id="addButton" value="Adicionar Nota do Aluno"/><br/>
+        <span>Largura da Linha: </span>  
+        <input type="text" id="widthOfLine" value="2">
+        <br/>
+        <button onclick="clearArea();">Limpar</button>
+
     </div>
-
-    <h2>Organizar Alunos por Nome</h2>
-
-<form id = "form">
-    <p><textarea id="scores" rows="5" cols="30" disabled="disabled"></textarea></p>
-</form>
-
-    <div class="formLayout">
-        <label>Nota média:</label>
-        <input type="text" id="averageScore" disabled="disabled"/><br/><br>
-
-        <label>&nbsp;</label>
-        <input type="button" id="clear" value="Limpar Notas dos Alunos" onclick="clear_click()"/><br/><br>
-
-        <label>&nbsp;</label> 
-        <input type="button" id="sortButton" value="Organizar por Nome do Aluno"/><br/>
-    </div>
-    </center>
+<script src="main.js"></script>
 </body>
+  
 </html>
